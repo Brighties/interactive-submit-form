@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Click here]()
-- Live Site URL: [Click here]()
+- Solution URL: [Click here](https://github.com/Brighties/interactive-submit-form.git)
+- Live Site URL: [Click here](https://roaring-gaufre-f1c377.netlify.app)
 
 ## My process
 
