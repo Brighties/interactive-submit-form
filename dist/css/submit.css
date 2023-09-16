@@ -1,0 +1,19 @@
+@import 'index.css';
+
+/* THANK YOU PAGE */
+.thank-you-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.selected-value-dashboard {
+    background: hsl(var(--dark-grey-alpha), 0.2); 
+    max-width: fit-content;
+    padding: 0.2em 1.5em;
+    border-radius: 20px;
+    color: var(--color-orange);
+}
+

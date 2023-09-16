@@ -1,0 +1,133 @@
+/* GENERAL SETTINGS */
+/* Color Variables */
+:root {
+    --color-white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-grey: hsl(213, 19%, 18%);
+    --dark-grey-alpha: 216, 12%, 54%;
+    --dark-blue: hsl(216, 12%, 8%);
+    --color-orange: hsl(25, 97%, 53%);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    font: inherit;
+}
+a {
+    text-decoration: none;
+}
+
+body {
+    background: var(--dark-blue);
+    color: var(--color-white);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* frontend-mentor inbuilt style */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+/* section container settings */
+.container {
+    background: var(--dark-grey);
+    max-width: 60vw;
+    padding: var(--padding, 2rem);
+    border-radius: 30px;
+    color: var(--light-grey);
+    font-family: 'Overpass', sans-serif;
+}
+
+/* icon wrapper */
+.icon-wrapper {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1;
+    background: hsl(var(--dark-grey-alpha), 0.09);
+    border-radius: 50%;
+}
+.star-icon {
+    aspect-ratio: 1;
+}
+/* section main header */
+.main-header {
+    color: var(--color-white);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.rating-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+/*MEDIA QUERY */
+@media screen and (max-width: 540px){
+    .rating-container{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: var(--padding-y, 5px);
+    }
+}
+.rating-value {
+    color: var(--medium-grey);
+    transition: background 200ms ease-in-out;
+}
+
+
+/* BUTTONS */
+.btn {
+    background: var(--color-orange);
+    border: transparent;
+    border-radius: 30px;
+    color: inherit;
+    text-transform: uppercase;
+    width: 100%;
+    transition: background 200ms ease-in-out;
+}
+.btn__link {
+    color: var(--color-white);
+    letter-spacing: 3px;
+    font-weight: bold;
+    display: inline-block;
+    width: 100%;
+    padding: 1rem;
+    transition: background 200ms ease-in-out;
+}
+ .btn:hover, .btn:focus {
+    background: var(--color-white);
+}
+.btn:hover .btn__link, .btn:focus .btn__link {
+    color: var(--color-orange);
+}
+.btn:active {
+    background: var(--color-white);
+}
+.btn:active .btn__link {
+    color: var(--color-orange);
+}
+
+/* hover and active state of rating values */
+.rating-value:hover, .rating-value:focus {
+    background: var(--color-orange);
+    color: var(--color-white);
+    cursor: pointer;
+}
+/* Styles for the 'active' class */
+.rating-value.active {
+    background-color: var(--light-grey);
+    color: #fff; /* Text color when active */
+    font-weight: bold; /* Example: make text bold when active */
+}
+
